@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#LogoText {
+    position: absolute;
+    z-index: 100;
+    font-size: 80px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    top: 75px;
+    left: 55px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.search-container {
+    border-radius: 30px;
+    position: absolute;
+    z-index: 100;
+    top: 200px;
+    left: 60px;
+    width: 400px;
+    height: 60px;
+    background-color: #454E53;
+    display: flex;
+}
+
+.search-container .search {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    width: 100%;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search-container input:focus {
+    outline: none;
+}
+
+.search-container button {
+    background-color: transparent;
+    border: none;
+    padding-right: 20px;
+}
+
+.search-container button i {
+    color: white;
+    font-size: 25px;
+}
+
+.stores-list-container {
+    width: 440px;
+    position: absolute;
+    z-index: 100;
+    background: white;
+    left: 43px;
+    top: 265px;
+    border-radius: 30px;
+    bottom: 0;
+    display: flex;
+    overflow-y: hidden;
+    padding-bottom: 30px;
+}
+
+.store-container {
+    border-bottom: 2px solid #979797;
+    display: flex;
+}
+
+.store-info-container {
+    flex-grow: 1;
+    
+
+}
+
+.store-address {
+    color: #514c4c;
+    margin-top: 30px;
+    font-size: 21px;
+}
+
+.store-address span {
+    display: block;
+}
+
+.store-phone-number {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #b5adad;
+}
+
+.store-number-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.store-number {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #454e53;
+    color: #b5adad;
+    border-radius: 50%;
+    font-size: 12px;
+
+}
+
+.stores-list {
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding-left: 20px;
+    padding-right: 20px;
+}
